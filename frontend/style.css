@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;     
+}
+
+body {
+    background: linear-gradient(0.25turn, #81dcf3, #669bf8);
+}
+
+.entry {
+    margin: 200px auto;
+    height: 200px;
+    width: 400px; 
+    background-color: whitesmoke; 
+    border-radius: 3%; 
+    padding: 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.entry h1 {
+    font-weight: 700; 
+}
+
+.entry .start-quiz {
+    height: 40px;
+    width: 150px;
+    font-size: medium;
+    border-radius: 5px;
+    border: 1px solid black;
+    transition: background-color 0.2s ease-in 0.2s;
+}
+
+.entry .start-quiz:hover {
+    background-color: rgb(216, 234, 250);
+    border: 1px solid black;
+}
+
+#quiz-form {
+    margin: 120px auto;
+    background-color: rgb(216, 234, 250);
+    height: 300px;
+    width: 350px ;
+    padding: 30px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.question {
+   font-size: 20px;
+}
+
+.timer {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    font-size: large;
+    
+}
+
+.options {
+    margin-top: 20px;
+    list-style-type: none;
+    line-height: 2rem;
+}
+
+#submitButton {
+    height: 35px;
+    width: 90px;
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+#submitButton:hover {
+    background-color: rgb(216, 234, 250);
+    border: 1px solid black;
+}
+
+.progress-bar {
+    position: absolute;
+    appearance: none;
+    margin-top: 19.88rem;
+    padding: 0%;
+    width: 350px; 
+}
+
+.progress-bar::-webkit-slider-runnable-track {
+    appearance: none;
+    border-radius: 5px;
+    background-color: rgb(8, 138, 23);
+    height: 0.75rem;
+    width: 100px;
+}
+
+.progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    background-color: rgb(255, 255, 255);
+    height: 10px;
+    width: 10px;
+    margin-top: 1px;
+    border-radius: 50%;    
+}
+
+.pauseBtn, .reStartBtn {
+    background-color: rgb(116, 83, 188);
+    color: white;
+    height: 40px;
+    width: 100px;
+    position: absolute;
+    border: 1px solid #b5b3b3;
+    border-radius: 5px;
+    padding: 4px;
+    transition: background-color 0.1s ease-in 0.1s;
+}
+.reStartBtn {
+    margin-top: 350px;
+}
+
+.pauseBtn {
+    margin-top: 350px;
+    margin-left: 250px;
+}
+
+.pauseBtn:hover {
+    background-color: rgb(110, 70, 194);
+
+}
+
+.reStartBtn:hover {
+    background-color: rgb(110, 70, 194);
+
+}
+
+.results {
+    background-color: white;
+    height: 200px ;
+    width: 500px;
+    margin: 200px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 3.75rem;
+    
+}
