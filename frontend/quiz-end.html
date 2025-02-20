@@ -10,11 +10,23 @@
     <div class="results">
         <h1>Quiz completed</h1>
         <h2 class="score">Your score is: 0</h2>   
+        <button class="reStartBtn">Restart</button>
     </div>
-
+    
     <script>
+         let f
+    // restart
+    let reStartBtn = document.getElementsByClassName('reStartBtn')[0];
+    reStartBtn.addEventListener("click", function(event){
+        event.preventDefault();
+        window.location.href = "quiz-page.html";
+        renderQuestion(0);
+
+    });
+
         let val = localStorage.getItem('quizScore');
-        document.getElementsByClassName("score")[0].innerHTML = "Your score is: " + val +"/20"
+        document.getElementsByClassName("score")[0].innerHTML = "Your score is: " + val +"/20";
+
     </script>
 </body>
 </html>
