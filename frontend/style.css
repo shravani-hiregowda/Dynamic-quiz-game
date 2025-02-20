@@ -138,7 +138,7 @@ body {
 .results {
     background-color: white;
     height: 250px ;
-    width: 500px;
+    width: 450px;
     margin: 190px auto;
     display: flex;
     flex-direction: column;
@@ -150,4 +150,46 @@ body {
 
 .reStartBtn {
     margin-top: 170px;
+}
+
+.update {
+    position: relative;
+    z-index: 10;    
+}
+
+@media (max-width:490px) {
+    .entry {
+        width: 270px ;
+    }
+    .entry .start-quiz {
+        width: 120px;
+    }
+    
+    #quiz-form {
+        width: 270px ;
+    }
+
+    .progress-bar {
+        width: 270px; 
+    }
+
+    .question {
+        font-size: 18px;
+     }
+
+     .timer {
+
+        font-size: medium;   
+    }
+
+    .pauseBtn {
+        margin-left: 90px;
+    }
+
+    .results {
+        width: 350px;
+    }
+
+    
+    
 }
